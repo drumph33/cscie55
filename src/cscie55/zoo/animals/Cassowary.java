@@ -7,8 +7,7 @@ package cscie55.zoo.animals;
  *********************/
 
  /**
-  * Cassowary is the abstract base class for all graphics contexts
-  * which allow an application to draw onto components realized on
+  * Cassowary is a class to respresent the Cassowary animal in a zoo.
   *
   * @author      Dylan Rumph
   * @version     %I%, %G%
@@ -17,6 +16,13 @@ package cscie55.zoo.animals;
 
 public class Cassowary
 {
+    /**
+    * Private fields in the Cassowary class:
+    * age: a float for tracking the age of the animal
+    * name: a String containing the animal's name
+    * favoriteFoods: a String array containing the animal's favorite foods
+    */
+
     private static float age;
     private static String name;
     private static String[] favoriteFoods;
