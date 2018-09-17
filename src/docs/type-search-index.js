@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"cscie55.zoo.animals","l":"Cassowary"},{"p":"cscie55.zoo.animals","l":"Chimpanzee"},{"p":"cscie55.hw1.elevator","l":"Elevator"},{"p":"cscie55.hw1.elevatortest","l":"ElevatorTest"},{"p":"cscie55.zoo.animals","l":"Ocelot"},{"p":"cscie55.zoo.animals","l":"Platypus"},{"p":"cscie55.zoo.animals","l":"Serval"}]

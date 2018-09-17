@@ -11,35 +11,29 @@ package cscie55.hw1.elevatortest;
 import cscie55.hw1.elevator.Elevator;
 
 /**
- * ElevatorTest is the abstract base class for all graphics contexts
- * which allow an application to draw onto components realized on
- * various devices or onto off-screen images.
- * Coordinates are infinitely thin and lie between the pixels of the
- * output device.
- * Operations which draw the outline of a figure operate by traversing
- * along the infinitely thin path with a pixel-sized pen that hangs
- * down and to the right of the anchor point on the path.
- * Operations which fill a figure operate by filling the interior
- * of the infinitely thin path.
- * Operations which render horizontal text render the ascending
- * portion of the characters entirely above the baseline coordinate.
+ * ElevatorTest is a class designed to test the Elevator class in the
+ * cscie55.hw1.elevator package.  The goal of ElevatorTest is to verify
+ * the functionality of all the currently implemented methods in Elevator.
+ * In version 1.0 these methods are the constructor method, boardPassenger(),
+ * toString(), and move().
  *
  * @author      Dylan Rumph
  * @version     %I%, %G%
  * @since       1.0
  */
 
-public class ElevatorTest {
-
+public class ElevatorTest
+{
     /**
-    * Constructor method for an Elevator object.
-    * The current floor parameter must be set between 1 and NUM_FLOORS.
-    * Setting the currentFloor parameter above NUM_FLOORS will result in
-    * the parameter being set to NUM_FLOORS.  Setting the value below 1 will
-    * result in the parameter being set to 1.  The direction parameter can have
-    * two possible values, true or false, corresponding to up and down
-    * respectively.
-    *
+    * Main method for ElevatorTest which performs a test to confirm that the
+    * Elevator class is working properly.  The method declares an Elevator
+    * object starting on the first floor moving upwards.  Next, 2 passengers
+    * are boarded on the 3rd floor and 1 passenger is boarded on the 5th floor.
+    * The state of the Elevator is printed to the console after boarding the
+    * passengers.  Finally, the test calls the move method 12 times using a
+    * loop.  12 is chosen so that the elevator travels from the first floor to
+    * 7th floor and back again.
+    *@param args the Java default standard main method parameter
     */
 
     public static void main(String[] args)
@@ -52,9 +46,7 @@ public class ElevatorTest {
 
         System.out.println(elevator.toString());
 
-        for (int j = 1; j < 13; j++)
-        {
+        for (int i = 1; i < 13; i++)
             elevator.move();
-        }
     }
 }
