@@ -1,0 +1,7 @@
+find -name *.java > javafiles.txt
+
+javac @javafiles.txt
+
+jar cvf rumph_dylan_hw1.jar cscie55
+
+java -cp rumph_dylan_hw1.jar cscie55.hw1.elevatortest.ElevatorTest
